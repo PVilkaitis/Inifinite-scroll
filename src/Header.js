@@ -2,11 +2,11 @@ import React from "react";
 
 import "./Header.css";
 
-const Header = () => {
+const Header = ({ showFeedHandler, closeFeedHandler }) => {
   return (
     <div className="header">
-      <button>Favourites</button>
-      <button>Feed</button>
+      <button onClick={() => closeFeedHandler()}>Favourites</button>
+      <button onClick={() => showFeedHandler()}>Feed</button>
     </div>
   );
 };

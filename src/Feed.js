@@ -20,12 +20,12 @@ const Feed = ({ setFav }) => {
     handler();
   }, []);
 
-  window.onscroll = async function () {
+  window.onscroll = function () {
     const position =
       (window.innerHeight + window.scrollY) / document.body.offsetHeight;
     if (position >= 0.95 && oldData !== newData) {
       setOldData(newData);
-      await handler();
+      handler();
     }
   };
 

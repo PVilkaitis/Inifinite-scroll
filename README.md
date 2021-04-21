@@ -9,5 +9,7 @@ tiesiog nuotraukų numeriai, būtų galima nukirpti jei per ilgi ir įdėti, ši
 pavadinimą.
 3) Fav.js ir Feed.js yra šiek tiek kodo dublikacijų, būtų galima viską protingai sudėti į vieną, šiam
 momentui kiek gerai, kiek blogai, yra du atskiri komponentai.
+4) Fetchinant iš API kiekvieną kartą naudojamas pats pirmas gautas puslapis, todėl dalis nuotraukų gali pasikartoti
+scrollinant žemyn, nespėjau, bet reikėtų iteratint per puslapius gautus iš API, taip būtų galima išvengti pasikartojimų.
 
 Paulius Vilkaitis

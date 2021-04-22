@@ -12,4 +12,7 @@ momentui kiek gerai, kiek blogai, yra du atskiri komponentai.
 4) Fetchinant iš API kiekvieną kartą naudojamas pats pirmas gautas puslapis, todėl dalis nuotraukų gali pasikartoti
 scrollinant žemyn, nespėjau, bet reikėtų iteratint per puslapius gautus iš API, taip būtų galima išvengti pasikartojimų.
 
+P.S.
+Jeigu duomenys nėra fetch'inami, nebegalioja token, reikėtų į handler() funkciją faile Feed.js įklijuoti naują url iš https://www.flickr.com/services/api/explore/flickr.photos.getRecent
+
 Paulius Vilkaitis
